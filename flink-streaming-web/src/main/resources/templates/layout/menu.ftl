@@ -129,18 +129,18 @@
                 </li>
             </ul>
         </li>
-        <li <#if open??&& open=="qrcode" > class="open" </#if>>
+        <li <#if open??&& open=="udflist" > class="open" </#if>>
             <a href="#" class="dropdown-toggle">
                 <i class="menu-icon  fa fa-search" ></i>
-                <span class="menu-text">联系方式</span>
-                <b class="arrow fa fa-angle-down"></b>
+                <span class="menu-text">UDF管理</span>
+                <b class="arrow fa fa-angle-dow n"></b>
             </a>
             <b class="arrow"></b>
             <ul class="submenu">
-                <li <#if active??&& active=="qrcode"  > class="active" </#if>>
-                    <a href="/admin/qrcode" target="_blank">
+                <li <#if active??&& active=="udflist"  > class="active" </#if>>
+                    <a href="/admin/udf_upload" target="_blank">
                         <i class="menu-icon fa fa-caret-right"></i>
-                        联系方式
+                        UDF上传
                     </a>
                     <b class="arrow"></b>
                 </li>

@@ -136,7 +136,7 @@ CREATE TABLE `system_config` (
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL COMMENT '用户名',
+  `username` varchar(128) COLLATE utf8mb4_bin DEFAULT NULL COMMENT '用户名',
   `password` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL COMMENT '密码',
   `stauts` tinyint(1) NOT NULL COMMENT '1:启用 0: 停用',
   `is_deleted` tinyint(1) NOT NULL DEFAULT '0' COMMENT '1:删除 0: 未删除',
